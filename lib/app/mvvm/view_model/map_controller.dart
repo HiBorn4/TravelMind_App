@@ -495,7 +495,7 @@ class AppMapController extends GetxController
   Future<bool> getMapDataApi(String? selectedCity) async {
     try {
       if (selectedCity == null || selectedCity.trim().isEmpty) {
-        LoggerService.w('No city selected — skipping API call');
+        LoggerService.w('No city selected - skipping API call');
         return false;
       }
       isMapLoading.value = true;

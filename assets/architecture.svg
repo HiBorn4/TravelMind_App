@@ -73,7 +73,7 @@
   <circle cx="66" cy="26" r="7" fill="#28C840"/>
 
   <!-- Title -->
-  <text x="480" y="33" text-anchor="middle" fill="#C1FF71" font-size="15" font-weight="700" letter-spacing="3" filter="url(#glow)">VladAI — Application Architecture</text>
+  <text x="480" y="33" text-anchor="middle" fill="#C1FF71" font-size="15" font-weight="700" letter-spacing="3" filter="url(#glow)">VladAI - Application Architecture</text>
 
   <!-- ===================== FLUTTER APP LAYER ===================== -->
   <rect x="24" y="72" width="912" height="192" rx="12" fill="url(#cardGrad)" stroke="#C1FF71" stroke-width="1.5" stroke-opacity="0.3" filter="url(#shadow)"/>
@@ -262,5 +262,5 @@
   <text x="826" y="578" text-anchor="middle" fill="#7B8EA0" font-size="7.5">iOS · Android · Two Locales (EN/RO)</text>
 
   <!-- Bottom label -->
-  <text x="480" y="660" text-anchor="middle" fill="#3A4A5A" font-size="9" letter-spacing="2">VladAI — Romania Travel Intelligence Platform © 2026</text>
+  <text x="480" y="660" text-anchor="middle" fill="#3A4A5A" font-size="9" letter-spacing="2">VladAI - Romania Travel Intelligence Platform © 2026</text>
 </svg>

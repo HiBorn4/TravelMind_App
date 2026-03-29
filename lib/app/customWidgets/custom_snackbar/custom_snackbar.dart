@@ -236,7 +236,7 @@ class CustomSnackbar {
     );
   }
 
-  // Variants (unchanged signatures — call show())
+  // Variants (unchanged signatures - call show())
   static void showError({String? title, String? message, List<String>? messageList, IconData? iconData}) {
     show(
       title: title ?? "Error",

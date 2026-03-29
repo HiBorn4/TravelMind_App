@@ -415,7 +415,7 @@ class _ToursViewState extends State<ToursView> {
     }
   }
 
-  // 🔹 Existing slot tile — unchanged layout, with optional selected border
+  // 🔹 Existing slot tile - unchanged layout, with optional selected border
   Widget _buildSlotTile(
     SlotItr slot,
     String itineraryId, {

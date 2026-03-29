@@ -1,4 +1,4 @@
-// LayerX-style full model — all classes end with 'Itr'
+// LayerX-style full model - all classes end with 'Itr'
 // Paste this file (e.g., models/itinerary_itr.dart)
 
 // ------------------ Data ------------------

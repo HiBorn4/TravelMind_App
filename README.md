@@ -3,7 +3,7 @@
 <!-- Uncomment and replace with your banner screenshot -->
 <!-- <img src="docs/screenshots/banner.png" alt="VladAI Banner" width="100%"> -->
 
-# 🇷🇴 VladAI — Romania Travel Intelligence
+# 🇷🇴 VladAI - Romania Travel Intelligence
 
 **An AI-powered mobile travel companion that knows Romania like a local.**
 
@@ -15,13 +15,13 @@
 [![AI Powered](https://img.shields.io/badge/AI-RAG_·_LLM_·_Streaming-7C3AED?style=flat-square)](/)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=flat-square)](/)
 
-> *"Plan, explore, and navigate like a local — all with the help of AI."*
+> *"Plan, explore, and navigate like a local - all with the help of AI."*
 
 </div>
 
 ---
 
-## 📸 Screenshots
+<!-- ## 📸 Screenshots
 
 > **📷 Action required:** Replace placeholders below with real screenshots.
 > See the [Screenshot Guide](#-screenshot--recording-guide) section for what to capture.
@@ -38,13 +38,13 @@
 
 </div>
 
-> 🎬 **Demo Video** — [Watch on YouTube](#) *(replace with your link)*
+> 🎬 **Demo Video** - [Watch on YouTube](#) *(replace with your link)* -->
 
 ---
 
 ## 🧠 What Is VladAI?
 
-VladAI is a full-featured **AI-driven travel app** built for exploring Romania intelligently. It combines real-time interactive maps, a context-aware AI assistant, multi-step itinerary generation, and hotel discovery — all wrapped in a sleek Flutter mobile UI with bilingual support (English & Romanian).
+VladAI is a full-featured **AI-driven travel app** built for exploring Romania intelligently. It combines real-time interactive maps, a context-aware AI assistant, multi-step itinerary generation, and hotel discovery - all wrapped in a sleek Flutter mobile UI with bilingual support (English & Romanian).
 
 This project was built as a **production-grade freelance delivery** showcasing the intersection of mobile engineering, AI/RAG pipelines, and UX-polished Flutter development.
 
@@ -71,7 +71,7 @@ This project was built as a **production-grade freelance delivery** showcasing t
 ## 🏗️ Architecture
 
 <div align="center">
-  <img src="docs/architecture.svg" alt="VladAI Application Architecture" width="100%">
+  <img src="assets/architecture.svg" alt="VladAI Application Architecture" width="100%">
 </div>
 
 ### Pattern: MVVM + Repository + Service Layer
@@ -177,7 +177,7 @@ SOCIAL    POST /user-suggestions · POST /itinerary-reviews/itinerary/:id
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/vladai-flutter.git
+git clone https://github.com/hiborn4/TravelMind_App.git
 cd vladai-flutter
 
 # 2. Install dependencies
@@ -211,10 +211,10 @@ flutter run
 | OTP Verify | `/otpCodeView` | Email OTP validation |
 | Forgot / Reset Password | `/forgotPassword` | Email OTP flow |
 | Bottom Bar | `/bottomBar` | Main shell with 4 tabs |
-| — Chat | (tab) | AI travel assistant with streaming responses |
-| — Map | (tab) | Mapbox map with POI overlays |
-| — Explore (Shop) | (tab) | Itinerary cards, city cards, favourites |
-| — Profile | (tab) | User info, settings, account management |
+| - Chat | (tab) | AI travel assistant with streaming responses |
+| - Map | (tab) | Mapbox map with POI overlays |
+| - Explore (Shop) | (tab) | Itinerary cards, city cards, favourites |
+| - Profile | (tab) | User info, settings, account management |
 | Plan Trip (Wizard) | `/planTrip` | 4-step itinerary generator |
 | Hotel Detail | `/hotelDetail` | Full hotel page with AI chat integration |
 | Tours | `/tours` | Guided tour listings |
@@ -247,17 +247,17 @@ flutter run
 
 ### What to Screenshot (Priority Order)
 
-1. **AI Chat in action** — Ask "best places to visit in Cluj-Napoca in autumn" and screenshot the streaming response
-2. **Trip Planner Wizard** — Capture each of the 4 steps (city select → dates → group → interests → generated itinerary)
-3. **Map View** — Filter by "accommodation" category with custom pins visible
-4. **Hotel Detail** — Open a hotel card showing the photo gallery, rating, and AI-chat CTA button
-5. **City Explorer (Explore tab)** — Show the card-swiper with itinerary cards
-6. **Onboarding / Login flow** — Language selection + Login screen
+1. **AI Chat in action** - Ask "best places to visit in Cluj-Napoca in autumn" and screenshot the streaming response
+2. **Trip Planner Wizard** - Capture each of the 4 steps (city select → dates → group → interests → generated itinerary)
+3. **Map View** - Filter by "accommodation" category with custom pins visible
+4. **Hotel Detail** - Open a hotel card showing the photo gallery, rating, and AI-chat CTA button
+5. **City Explorer (Explore tab)** - Show the card-swiper with itinerary cards
+6. **Onboarding / Login flow** - Language selection + Login screen
 
 ### Screenshot Best Practices
 
 - Use a **Pixel 7 or iPhone 15 Pro** frame (or a Figma device mockup)
-- Enable **Dark Mode** for the map view — the dark Mapbox style looks dramatic
+- Enable **Dark Mode** for the map view - the dark Mapbox style looks dramatic
 - Populate the chat with **real travel queries** before screenshotting
 - Use **DevicePreview** (already integrated in the app, set `enabled: true` in `main.dart`) to simulate different screen sizes
 
@@ -288,12 +288,12 @@ docs/screenshots/08_notifications.png
 
 Use this order when presenting or demoing the app:
 
-1. **Cold open** — Launch app from scratch, show splash and language selection
-2. **The hook** — Open AI Chat, type *"Plan a 3-day trip to Sibiu for a couple in October"*, watch streaming response
-3. **Trip wizard** — Tap "Create a new Itinerary", walk through all 4 steps, show the generated plan
-4. **Map exploration** — Switch to Map tab, filter by category, tap a POI, show the detail card
-5. **Hotel deep-dive** — Open a hotel detail page, scroll through photos, show reviews and AI chat CTA
-6. **Profile / Settings** — Show language toggle (EN ↔ RO), notification centre, account settings
+1. **Cold open** - Launch app from scratch, show splash and language selection
+2. **The hook** - Open AI Chat, type *"Plan a 3-day trip to Sibiu for a couple in October"*, watch streaming response
+3. **Trip wizard** - Tap "Create a new Itinerary", walk through all 4 steps, show the generated plan
+4. **Map exploration** - Switch to Map tab, filter by category, tap a POI, show the detail card
+5. **Hotel deep-dive** - Open a hotel detail page, scroll through photos, show reviews and AI chat CTA
+6. **Profile / Settings** - Show language toggle (EN ↔ RO), notification centre, account settings
 
 ---
 
@@ -302,8 +302,8 @@ Use this order when presenting or demoing the app:
 | Component | Free Tier Option | Notes |
 |---|---|---|
 | Flutter Web preview | **Vercel** or **Netlify** | Run `flutter build web` and deploy the `build/web` folder. Useful for quick demoes |
-| Backend API | Already deployed at `api.vladai.eu` | — |
-| AI Engine | Already deployed | — |
+| Backend API | Already deployed at `api.vladai.eu` | - |
+| AI Engine | Already deployed | - |
 | App Store | **Google Play Internal Testing** | Free internal track; perfect for portfolio reviewer access |
 | App Store | **TestFlight** (iOS) | Free up to 10,000 testers |
 
@@ -324,11 +324,11 @@ Use this order when presenting or demoing the app:
 
 ## 👨‍💻 Author
 
-**Vlad** — Flutter Developer & AI Integration Engineer
+**Vlad** - Flutter Developer & AI Integration Engineer
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/YOUR_HANDLE)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/YOUR_USERNAME)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-C1FF71?style=flat-square)](https://your-portfolio.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/aryan-shirke)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/hiborn4)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-C1FF71?style=flat-square)](https://aryanshirke.me)
 
 > *Available for Flutter, mobile AI, and full-stack freelance projects.*
 
