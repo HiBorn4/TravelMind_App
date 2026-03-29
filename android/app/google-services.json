@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "830239562846",
+    "project_id": "vladai-d4acb",
+    "storage_bucket": "vladai-d4acb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830239562846:android:ca50fba293a212364c68cf",
+        "android_client_info": {
+          "package_name": "com.example.vlad_ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA59_TQR2NzhLs_c3mGdLJ4-3p3ruTO_2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

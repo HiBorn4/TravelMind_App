@@ -1,0 +1,266 @@
+<svg viewBox="0 0 960 680" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C1FF71"/>
+      <stop offset="100%" stop-color="#9BC008"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E2530"/>
+      <stop offset="100%" stop-color="#161C25"/>
+    </linearGradient>
+    <linearGradient id="firebaseGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF8C00"/>
+      <stop offset="100%" stop-color="#FFC200"/>
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6C63FF"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#C1FF71" opacity="0.7"/>
+    </marker>
+    <marker id="arrowGrey" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#555"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#FF8C00" opacity="0.8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="680" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Grid lines (subtle) -->
+  <g opacity="0.04" stroke="#C1FF71" stroke-width="1">
+    <line x1="0" y1="80" x2="960" y2="80"/>
+    <line x1="0" y1="160" x2="960" y2="160"/>
+    <line x1="0" y1="240" x2="960" y2="240"/>
+    <line x1="0" y1="320" x2="960" y2="320"/>
+    <line x1="0" y1="400" x2="960" y2="400"/>
+    <line x1="0" y1="480" x2="960" y2="480"/>
+    <line x1="0" y1="560" x2="960" y2="560"/>
+    <line x1="0" y1="640" x2="960" y2="640"/>
+    <line x1="80" y1="0" x2="80" y2="680"/>
+    <line x1="160" y1="0" x2="160" y2="680"/>
+    <line x1="240" y1="0" x2="240" y2="680"/>
+    <line x1="320" y1="0" x2="320" y2="680"/>
+    <line x1="400" y1="0" x2="400" y2="680"/>
+    <line x1="480" y1="0" x2="480" y2="680"/>
+    <line x1="560" y1="0" x2="560" y2="680"/>
+    <line x1="640" y1="0" x2="640" y2="680"/>
+    <line x1="720" y1="0" x2="720" y2="680"/>
+    <line x1="800" y1="0" x2="800" y2="680"/>
+    <line x1="880" y1="0" x2="880" y2="680"/>
+  </g>
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="960" height="52" rx="16" fill="#0D1117"/>
+  <rect x="0" y="36" width="960" height="16" fill="#0D1117"/>
+  <!-- Dot decorations -->
+  <circle cx="26" cy="26" r="7" fill="#FF5F57"/>
+  <circle cx="46" cy="26" r="7" fill="#FFBD2E"/>
+  <circle cx="66" cy="26" r="7" fill="#28C840"/>
+
+  <!-- Title -->
+  <text x="480" y="33" text-anchor="middle" fill="#C1FF71" font-size="15" font-weight="700" letter-spacing="3" filter="url(#glow)">VladAI — Application Architecture</text>
+
+  <!-- ===================== FLUTTER APP LAYER ===================== -->
+  <rect x="24" y="72" width="912" height="192" rx="12" fill="url(#cardGrad)" stroke="#C1FF71" stroke-width="1.5" stroke-opacity="0.3" filter="url(#shadow)"/>
+  <text x="44" y="93" fill="#C1FF71" font-size="11" font-weight="700" letter-spacing="2" opacity="0.9">FLUTTER APP  ·  MVVM Architecture  ·  GetX State Management</text>
+
+  <!-- Screens Column -->
+  <!-- Screen blocks row 1 -->
+  <rect x="40" y="102" width="100" height="42" rx="8" fill="#1A2535" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="90" y="119" text-anchor="middle" fill="#C1FF71" font-size="9" font-weight="600">🗺️  MAP VIEW</text>
+  <text x="90" y="133" text-anchor="middle" fill="#8899AA" font-size="8">Mapbox GL</text>
+
+  <rect x="152" y="102" width="100" height="42" rx="8" fill="#1A2535" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="202" y="119" text-anchor="middle" fill="#C1FF71" font-size="9" font-weight="600">🤖  AI CHAT</text>
+  <text x="202" y="133" text-anchor="middle" fill="#8899AA" font-size="8">Streaming RAG</text>
+
+  <rect x="264" y="102" width="100" height="42" rx="8" fill="#1A2535" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="314" y="119" text-anchor="middle" fill="#C1FF71" font-size="9" font-weight="600">✈️  TRIP PLANNER</text>
+  <text x="314" y="133" text-anchor="middle" fill="#8899AA" font-size="8">AI Itinerary Gen</text>
+
+  <rect x="376" y="102" width="100" height="42" rx="8" fill="#1A2535" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="426" y="119" text-anchor="middle" fill="#C1FF71" font-size="9" font-weight="600">🏨  HOTEL DETAIL</text>
+  <text x="426" y="133" text-anchor="middle" fill="#8899AA" font-size="8">Reviews + Booking</text>
+
+  <rect x="488" y="102" width="100" height="42" rx="8" fill="#1A2535" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="538" y="119" text-anchor="middle" fill="#C1FF71" font-size="9" font-weight="600">🏙️  EXPLORE</text>
+  <text x="538" y="133" text-anchor="middle" fill="#8899AA" font-size="8">Cities + Categories</text>
+
+  <rect x="600" y="102" width="100" height="42" rx="8" fill="#1A2535" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="650" y="119" text-anchor="middle" fill="#C1FF71" font-size="9" font-weight="600">👤  PROFILE</text>
+  <text x="650" y="133" text-anchor="middle" fill="#8899AA" font-size="8">Auth + Settings</text>
+
+  <rect x="712" y="102" width="100" height="42" rx="8" fill="#1A2535" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="762" y="119" text-anchor="middle" fill="#C1FF71" font-size="9" font-weight="600">🔔  NOTIFS</text>
+  <text x="762" y="133" text-anchor="middle" fill="#8899AA" font-size="8">FCM Push</text>
+
+  <rect x="824" y="102" width="100" height="42" rx="8" fill="#1A2535" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="874" y="119" text-anchor="middle" fill="#C1FF71" font-size="9" font-weight="600">🌐  i18n</text>
+  <text x="874" y="133" text-anchor="middle" fill="#8899AA" font-size="8">EN + RO</text>
+
+  <!-- ViewModels Row -->
+  <text x="44" y="165" fill="#84818A" font-size="9" font-weight="600" letter-spacing="1">VIEW MODELS (GetX Controllers)</text>
+  <rect x="40" y="172" width="912" height="28" rx="6" fill="#141C28" stroke="#2A3545" stroke-width="1"/>
+  <text x="90" y="190" text-anchor="middle" fill="#7B8EA0" font-size="8">ChatController</text>
+  <text x="200" y="190" text-anchor="middle" fill="#7B8EA0" font-size="8">MapController</text>
+  <text x="310" y="190" text-anchor="middle" fill="#7B8EA0" font-size="8">PlanTripController</text>
+  <text x="430" y="190" text-anchor="middle" fill="#7B8EA0" font-size="8">CitiesController</text>
+  <text x="545" y="190" text-anchor="middle" fill="#7B8EA0" font-size="8">HotelDetailController</text>
+  <text x="660" y="190" text-anchor="middle" fill="#7B8EA0" font-size="8">ProfileController</text>
+  <text x="775" y="190" text-anchor="middle" fill="#7B8EA0" font-size="8">NotificationController</text>
+  <text x="880" y="190" text-anchor="middle" fill="#7B8EA0" font-size="8">LoginController</text>
+
+  <!-- Repository Row -->
+  <text x="44" y="218" fill="#84818A" font-size="9" font-weight="600" letter-spacing="1">REPOSITORIES + SERVICES</text>
+  <rect x="40" y="225" width="220" height="28" rx="6" fill="#141C28" stroke="#2A3545" stroke-width="1"/>
+  <text x="150" y="243" text-anchor="middle" fill="#7B8EA0" font-size="8">AuthRepo · CitiesRepo · ItineraryRepo · SuggestPlaceRepo</text>
+
+  <rect x="272" y="225" width="220" height="28" rx="6" fill="#141C28" stroke="#2A3545" stroke-width="1"/>
+  <text x="382" y="243" text-anchor="middle" fill="#7B8EA0" font-size="8">HTTPSCalls · APIResponseHandler · JSONExtractor</text>
+
+  <rect x="504" y="225" width="220" height="28" rx="6" fill="#141C28" stroke="#2A3545" stroke-width="1"/>
+  <text x="614" y="243" text-anchor="middle" fill="#7B8EA0" font-size="8">LocationService · SharedPrefs · InternetService</text>
+
+  <rect x="736" y="225" width="216" height="28" rx="6" fill="#141C28" stroke="#2A3545" stroke-width="1"/>
+  <text x="844" y="243" text-anchor="middle" fill="#7B8EA0" font-size="8">NotificationService · LoggerService</text>
+
+  <!-- ===================== ARROWS DOWN ===================== -->
+  <!-- Flutter to APIs -->
+  <line x1="200" y1="264" x2="200" y2="306" stroke="#C1FF71" stroke-width="1.5" stroke-dasharray="4,3" stroke-opacity="0.6" marker-end="url(#arrowGreen)"/>
+  <line x1="480" y1="264" x2="360" y2="306" stroke="#C1FF71" stroke-width="1.5" stroke-dasharray="4,3" stroke-opacity="0.6" marker-end="url(#arrowGreen)"/>
+  <line x1="614" y1="264" x2="614" y2="306" stroke="#FF8C00" stroke-width="1.5" stroke-dasharray="4,3" stroke-opacity="0.7" marker-end="url(#arrowOrange)"/>
+  <line x1="750" y1="264" x2="750" y2="306" stroke="#FF8C00" stroke-width="1.5" stroke-dasharray="4,3" stroke-opacity="0.7" marker-end="url(#arrowOrange)"/>
+  <line x1="100" y1="264" x2="800" y2="306" stroke="#6C63FF" stroke-width="1.5" stroke-dasharray="4,3" stroke-opacity="0.6" marker-end="url(#arrowGrey)"/>
+
+  <!-- ===================== BACKEND LAYER ===================== -->
+  <!-- VladAI REST API -->
+  <rect x="24" y="308" width="440" height="110" rx="12" fill="url(#cardGrad)" stroke="#C1FF71" stroke-width="1.5" stroke-opacity="0.4" filter="url(#shadow)"/>
+  <text x="44" y="328" fill="#C1FF71" font-size="11" font-weight="700" letter-spacing="2">VLADAI REST API  ·  api.vladai.eu</text>
+
+  <rect x="40" y="336" width="90" height="32" rx="6" fill="#0D2015" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="85" y="349" text-anchor="middle" fill="#C1FF71" font-size="8" font-weight="600">/auth/*</text>
+  <text x="85" y="361" text-anchor="middle" fill="#7B8EA0" font-size="7">Register·Login·OTP</text>
+
+  <rect x="142" y="336" width="90" height="32" rx="6" fill="#0D2015" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="187" y="349" text-anchor="middle" fill="#C1FF71" font-size="8" font-weight="600">/cities/*</text>
+  <text x="187" y="361" text-anchor="middle" fill="#7B8EA0" font-size="7">Popular·Details·Map</text>
+
+  <rect x="244" y="336" width="90" height="32" rx="6" fill="#0D2015" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="289" y="349" text-anchor="middle" fill="#C1FF71" font-size="8" font-weight="600">/v2/itineraries</text>
+  <text x="289" y="361" text-anchor="middle" fill="#7B8EA0" font-size="7">Generate·CRUD·Slots</text>
+
+  <rect x="346" y="336" width="100" height="32" rx="6" fill="#0D2015" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="396" y="349" text-anchor="middle" fill="#C1FF71" font-size="8" font-weight="600">/favorites · /notifs</text>
+  <text x="396" y="361" text-anchor="middle" fill="#7B8EA0" font-size="7">Toggle·Reviews·Suggest</text>
+
+  <text x="44" y="388" fill="#84818A" font-size="9" letter-spacing="1">Node.js / Express  ·  REST  ·  JWT Auth  ·  Romania-focused data</text>
+  <rect x="40" y="396" width="412" height="14" rx="4" fill="#0A1520"/>
+  <text x="246" y="407" text-anchor="middle" fill="#3A4A5A" font-size="8">Countries · Reviews · Suggestions · User Profile · Notifications</text>
+
+  <!-- AI RAG Engine -->
+  <rect x="480" y="308" width="240" height="110" rx="12" fill="#12101E" stroke="#6C63FF" stroke-width="1.5" stroke-opacity="0.6" filter="url(#shadow)"/>
+  <text x="500" y="328" fill="#A78BFA" font-size="11" font-weight="700" letter-spacing="2">AI / RAG ENGINE</text>
+  <text x="500" y="343" fill="#7B8EA0" font-size="9">69.62.126.195:9000</text>
+
+  <rect x="496" y="350" width="100" height="30" rx="6" fill="#1A1535" stroke="#6C63FF" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="546" y="362" text-anchor="middle" fill="#A78BFA" font-size="8" font-weight="600">Query Engine</text>
+  <text x="546" y="373" text-anchor="middle" fill="#7B8EA0" font-size="7">/api/query (SSE)</text>
+
+  <rect x="606" y="350" width="100" height="30" rx="6" fill="#1A1535" stroke="#6C63FF" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="656" y="362" text-anchor="middle" fill="#A78BFA" font-size="8" font-weight="600">Vector Store</text>
+  <text x="656" y="373" text-anchor="middle" fill="#7B8EA0" font-size="7">Romania Knowledge</text>
+
+  <text x="496" y="402" fill="#7B8EA0" font-size="8">Streaming Response  ·  Context-aware  ·  Travel QA</text>
+  <text x="496" y="414" fill="#7B8EA0" font-size="8">Hotel / POI enrichment  ·  LLM-powered chat</text>
+
+  <!-- Firebase -->
+  <rect x="736" y="308" width="200" height="110" rx="12" fill="#1A1200" stroke="#FFC200" stroke-width="1.5" stroke-opacity="0.5" filter="url(#shadow)"/>
+  <text x="756" y="328" fill="#FFC200" font-size="11" font-weight="700" letter-spacing="2">FIREBASE</text>
+
+  <rect x="752" y="336" width="80" height="28" rx="6" fill="#201800" stroke="#FFC200" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="792" y="347" text-anchor="middle" fill="#FFC200" font-size="8">🔐 Auth</text>
+  <text x="792" y="359" text-anchor="middle" fill="#8B7000" font-size="7">OTP/Tokens</text>
+
+  <rect x="844" y="336" width="80" height="28" rx="6" fill="#201800" stroke="#FFC200" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="884" y="347" text-anchor="middle" fill="#FFC200" font-size="8">📊 Analytics</text>
+  <text x="884" y="359" text-anchor="middle" fill="#8B7000" font-size="7">User Events</text>
+
+  <rect x="752" y="372" width="80" height="28" rx="6" fill="#201800" stroke="#FFC200" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="792" y="384" text-anchor="middle" fill="#FFC200" font-size="8">💬 FCM</text>
+  <text x="792" y="396" text-anchor="middle" fill="#8B7000" font-size="7">Push Notifs</text>
+
+  <rect x="844" y="372" width="80" height="28" rx="6" fill="#201800" stroke="#FFC200" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="884" y="384" text-anchor="middle" fill="#FFC200" font-size="8">🐛 Crashlytics</text>
+  <text x="884" y="396" text-anchor="middle" fill="#8B7000" font-size="7">Error Tracking</text>
+
+  <!-- ===================== THIRD PARTY LAYER ===================== -->
+  <rect x="24" y="436" width="912" height="72" rx="12" fill="url(#cardGrad)" stroke="#3A4A5A" stroke-width="1" stroke-opacity="0.5" filter="url(#shadow)"/>
+  <text x="44" y="456" fill="#8899AA" font-size="11" font-weight="700" letter-spacing="2">THIRD-PARTY INTEGRATIONS</text>
+
+  <rect x="40" y="464" width="110" height="30" rx="6" fill="#0D1520" stroke="#3A5030" stroke-width="1"/>
+  <text x="95" y="476" text-anchor="middle" fill="#C1FF71" font-size="9" font-weight="600">🗺️ Mapbox GL</text>
+  <text x="95" y="488" text-anchor="middle" fill="#7B8EA0" font-size="7.5">Annotations · Dark/Light</text>
+
+  <rect x="162" y="464" width="110" height="30" rx="6" fill="#0D1520" stroke="#3A5030" stroke-width="1"/>
+  <text x="217" y="476" text-anchor="middle" fill="#C1FF71" font-size="9" font-weight="600">📍 Geocoding</text>
+  <text x="217" y="488" text-anchor="middle" fill="#7B8EA0" font-size="7.5">Reverse + Forward</text>
+
+  <rect x="284" y="464" width="110" height="30" rx="6" fill="#0D1520" stroke="#3A5030" stroke-width="1"/>
+  <text x="339" y="476" text-anchor="middle" fill="#A0A0FF" font-size="9" font-weight="600">🔤 Google Fonts</text>
+  <text x="339" y="488" text-anchor="middle" fill="#7B8EA0" font-size="7.5">Dynamic Typography</text>
+
+  <rect x="406" y="464" width="110" height="30" rx="6" fill="#0D1520" stroke="#3A5030" stroke-width="1"/>
+  <text x="461" y="476" text-anchor="middle" fill="#A0A0FF" font-size="9" font-weight="600">🖼️ CachedImage</text>
+  <text x="461" y="488" text-anchor="middle" fill="#7B8EA0" font-size="7.5">Offline image cache</text>
+
+  <rect x="528" y="464" width="110" height="30" rx="6" fill="#0D1520" stroke="#3A5030" stroke-width="1"/>
+  <text x="583" y="476" text-anchor="middle" fill="#FFC200" font-size="9" font-weight="600">📱 ScreenUtil</text>
+  <text x="583" y="488" text-anchor="middle" fill="#7B8EA0" font-size="7.5">Responsive Layout</text>
+
+  <rect x="650" y="464" width="110" height="30" rx="6" fill="#0D1520" stroke="#3A5030" stroke-width="1"/>
+  <text x="705" y="476" text-anchor="middle" fill="#FFC200" font-size="9" font-weight="600">🔄 GetX</text>
+  <text x="705" y="488" text-anchor="middle" fill="#7B8EA0" font-size="7.5">State · Nav · DI</text>
+
+  <rect x="772" y="464" width="110" height="30" rx="6" fill="#0D1520" stroke="#3A5030" stroke-width="1"/>
+  <text x="827" y="476" text-anchor="middle" fill="#FFC200" font-size="9" font-weight="600">💾 GetStorage</text>
+  <text x="827" y="488" text-anchor="middle" fill="#7B8EA0" font-size="7.5">Local Persistence</text>
+
+  <!-- ===================== DATA FLOW ===================== -->
+  <rect x="24" y="526" width="912" height="70" rx="12" fill="#0D1117" stroke="#2A3545" stroke-width="1" filter="url(#shadow)"/>
+  <text x="44" y="546" fill="#7B8EA0" font-size="10" font-weight="700" letter-spacing="2">DATA FLOW LEGEND</text>
+
+  <!-- Legend items -->
+  <line x1="44" y1="570" x2="90" y2="570" stroke="#C1FF71" stroke-width="2" stroke-dasharray="5,3"/>
+  <circle cx="90" cy="570" r="3" fill="#C1FF71"/>
+  <text x="98" y="574" fill="#8899AA" font-size="9">REST API calls (JSON / HTTP)</text>
+
+  <line x1="260" y1="570" x2="306" y2="570" stroke="#6C63FF" stroke-width="2" stroke-dasharray="5,3"/>
+  <circle cx="306" cy="570" r="3" fill="#6C63FF"/>
+  <text x="314" y="574" fill="#8899AA" font-size="9">AI query + streaming SSE</text>
+
+  <line x1="480" y1="570" x2="526" y2="570" stroke="#FF8C00" stroke-width="2" stroke-dasharray="5,3"/>
+  <circle cx="526" cy="570" r="3" fill="#FF8C00"/>
+  <text x="534" y="574" fill="#8899AA" font-size="9">Firebase services (Auth / FCM / Analytics)</text>
+
+  <rect x="736" y="558" width="180" height="26" rx="5" fill="#0D1520" stroke="#C1FF71" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="826" y="568" text-anchor="middle" fill="#C1FF71" font-size="8" font-weight="600">Flutter 3.x  ·  Dart 3  ·  MVVM  ·  GetX</text>
+  <text x="826" y="578" text-anchor="middle" fill="#7B8EA0" font-size="7.5">iOS · Android · Two Locales (EN/RO)</text>
+
+  <!-- Bottom label -->
+  <text x="480" y="660" text-anchor="middle" fill="#3A4A5A" font-size="9" letter-spacing="2">VladAI — Romania Travel Intelligence Platform © 2026</text>
+</svg>
